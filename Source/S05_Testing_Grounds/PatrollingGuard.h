@@ -12,8 +12,12 @@ UCLASS()
 class S05_TESTING_GROUNDS_API APatrollingGuard : public ATP_ThirdPersonCharacter
 {
 	GENERATED_BODY()
-
-		UPROPERTY(EditInstanceOnly, Category = "Patrol")
-		TArray<AActor*> patrolPoints;
+public:
+	TArray<AActor*> getPatrolPoints();
+	
+protected:
+	UPROPERTY(EditInstanceOnly, Category = "Patrol")
+	TArray<AActor*> patrolPoints;
 	
 };
+

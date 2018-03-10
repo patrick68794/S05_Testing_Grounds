@@ -3,6 +3,7 @@
 #include "S05_Testing_Grounds.h"
 #include "PatrollingGuard.h"
 
-
-
-
+TArray<AActor*> APatrollingGuard::getPatrolPoints()
+{
+	return patrolPoints;
+}

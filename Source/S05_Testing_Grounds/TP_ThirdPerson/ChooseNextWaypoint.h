@@ -18,5 +18,11 @@ class S05_TESTING_GROUNDS_API UChooseNextWaypoint : public UBTTaskNode
 protected:
 	UPROPERTY(EditAnywhere, Category = "Blackboard")
 		struct FBlackboardKeySelector indexKey;
+
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
+		struct FBlackboardKeySelector nextWaypointKey;
+
+	//UPROPERTY(EditInstanceOnly, Category = "Patrol")
+	//	TArray<AActor*> patrolPoints;
 	
 };
