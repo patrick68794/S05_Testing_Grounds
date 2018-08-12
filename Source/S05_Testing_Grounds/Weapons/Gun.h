@@ -35,6 +35,7 @@ public:
 		class UAnimMontage* FireAnimation;
 
 	/** Fires a projectile. */
+	UFUNCTION(BlueprintCallable)
 	void OnFire();
 
 protected:
